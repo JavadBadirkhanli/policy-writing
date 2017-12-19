@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.simberg.cib.policywriting.activities.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <View
+        android:id="@+id/vMainActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineMainActivity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewMainActivity"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/vMainActivity"
+        app:layout_constraintLeft_toLeftOf="@+id/vMainActivity"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vMainActivity"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/insurance_company"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMainActivity" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineMainActivity">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clStandardMainActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvStandardLabelMainActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standart"
+                    android:layout_marginLeft="52dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/customTitle"
+                    android:textColor="@color/colorLabel"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clStandardOperationMainActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvStandardLabelMainActivity">
+
+                    <ImageView
+                        android:id="@+id/imgStandardOperationMainActivity"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/add_rect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/tvStandardOperationMainActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:autoSizeTextType="uniform"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imgStandardOperationMainActivity"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clStandardOperationMainActivity"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/colorLabel"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clStandardTerminateMainActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clStandardOperationMainActivity">
+
+                    <ImageView
+                        android:id="@+id/imgStandardTerminateOperationMainActivity"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/delete_rect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/tvStandardTerminateOperationMainActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:autoSizeTextType="uniform"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imgStandardTerminateOperationMainActivity"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clStandardTerminateMainActivity"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/colorLabel"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clStandardViewMainActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clStandardTerminateMainActivity">
+
+                    <ImageView
+                        android:id="@+id/imgStandardViewOperationMainActivity"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/view_rect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/tvStandardViewOperationMainActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:autoSizeTextType="uniform"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imgStandardViewOperationMainActivity"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clBorderMainActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clStandardMainActivity">
+
+                <TextView
+                    android:id="@+id/tvBorderLabelMainActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sərhəd"
+                    android:textSize="@dimen/customTitle"
+                    android:layout_marginLeft="52dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorLabel"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clBorderOperationMainActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvBorderLabelMainActivity">
+
+                    <ImageView
+                        android:id="@+id/imgBorderOperationMainActivity"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/add_rect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/tvBorderOperationMainActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:autoSizeTextType="uniform"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imgBorderOperationMainActivity"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clBorderOperationMainActivity"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/colorLabel"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clBorderTerminateMainActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clBorderOperationMainActivity">
+
+                    <ImageView
+                        android:id="@+id/imgBorderTerminateOperationMainActivity"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/delete_rect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/tvBorderTerminateOperationMainActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:autoSizeTextType="uniform"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imgBorderTerminateOperationMainActivity"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clBorderTerminateMainActivity"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/colorLabel"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clBorderViewMainActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clBorderTerminateMainActivity">
+
+                    <ImageView
+                        android:id="@+id/imgBorderViewOperationMainActivity"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/view_rect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/tvBorderViewOperationMainActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:autoSizeTextType="uniform"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imgBorderViewOperationMainActivity"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clGreenCardMainActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clBorderMainActivity">
+
+                <TextView
+                    android:id="@+id/tvGreenCardLabelMainActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yaşıl kart"
+                    android:layout_marginLeft="52dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/customTitle"
+                    android:textColor="@color/colorLabel" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clGreenCardOperationMainActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvGreenCardLabelMainActivity">
+
+                    <ImageView
+                        android:id="@+id/imgGreenCardOperationMainActivity"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/add_rect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/tvGreenCardOperationMainActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:autoSizeTextType="uniform"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imgGreenCardOperationMainActivity"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clGreenCardOperationMainActivity"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/colorLabel"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clGreenCardTerminateMainActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clGreenCardOperationMainActivity">
+
+                    <ImageView
+                        android:id="@+id/imgGreenCardTerminateOperationMainActivity"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/delete_rect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/tvGreenCardTerminateOperationMainActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:autoSizeTextType="uniform"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imgGreenCardTerminateOperationMainActivity"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clGreenCardTerminateMainActivity"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/colorLabel"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clGreenCardViewMainActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clGreenCardTerminateMainActivity">
+
+                    <ImageView
+                        android:id="@+id/imgGreenCardViewOperationMainActivity"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/view_rect"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/tvGreenCardViewOperationMainActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:autoSizeTextType="uniform"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imgGreenCardViewOperationMainActivity"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

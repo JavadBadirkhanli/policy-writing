@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserSearchActivity"
+    tools:showIn="@layout/content_user_details_search">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvUserUserSearchActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="80dp"
+        android:elevation="4dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rgPersonTypeUserSearchActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rbNaturalPersonUserSearchActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/natural_person"
+                        android:textColor="#000000" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rbJuridicalPersonUserSearchActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/juridical_person" />
+
+                </RadioGroup>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clStandardUserSearchActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toTopOf="@id/btnUserSearchEnterUserSearchActivity"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rgPersonTypeUserSearchActivity">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/cbResidentStandardUserSearchActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qeyri-rezident"
+                        android:visibility="visible"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cbResidentStandardUserSearchActivity">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tilIdDocumentStandardUserSearchActivity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <EditText
+                                android:id="@+id/etIdDocumentStandardUserSearchActivity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/national_id_serial_number" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tilTINStandardUserSearchActivity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <EditText
+                                android:id="@+id/etTINStandardUserSearchActivity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="VÖEN" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/clNonResidentStandardUserSearchActivity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <!--<android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilFirstNameNonResidentStandardUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/etFirstNameNonResidentStandardUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/name" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilLastNameNonResidentStandardUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tilFirstNameNonResidentStandardUserSearchActivity">
+
+                                <EditText
+                                    android:id="@+id/etLastNameNonResidentStandardUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/surname" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilPatronymicNonResidentStandardUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tilLastNameNonResidentStandardUserSearchActivity">
+
+                                <EditText
+                                    android:id="@+id/etPatronymicNonResidentStandardUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/father_name" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilPinNonResidentStandardUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tilPatronymicNonResidentStandardUserSearchActivity">
+
+                                <EditText
+                                    android:id="@+id/etPinNonResidentStandardUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/pin_code" />
+
+                            </android.support.design.widget.TextInputLayout>-->
+
+                            <TextView
+                                android:id="@+id/tvIdDocumentTypeNonResidentStandardUserSearchActivity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Yaşama icazə sənədinin növü"
+                                android:textSize="@dimen/customTitle"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <RadioGroup
+                                android:id="@+id/rgIdDocumentTypeNonResidentStandardUserSearchActivity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                app:layout_constraintTop_toBottomOf="@id/tvIdDocumentTypeNonResidentStandardUserSearchActivity">
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rbPRCNonResidentStandardUserSearchActivity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Daimi" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rbTRCNonResidentStandardUserSearchActivity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="60dp"
+                                    android:text="Müvəqqəti" />
+
+                            </RadioGroup>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilIdDocumentNonResidentStandardUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/rgIdDocumentTypeNonResidentStandardUserSearchActivity">
+
+                                <EditText
+                                    android:id="@+id/etIdDocumentNonResidentStandardUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/non_resident_id_document_number" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clBorderUserSearchActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@id/btnUserSearchEnterUserSearchActivity"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rgPersonTypeUserSearchActivity">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/cbResidentBorderUserSearchActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qeyri-rezident"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cbResidentBorderUserSearchActivity">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tilIdDocumentBorderUserSearchActivity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <EditText
+                                android:id="@+id/etIdDocumentBorderUserSearchActivity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/national_id_serial_number" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tilTINBorderUserSearchActivity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <EditText
+                                android:id="@+id/etTINBorderUserSearchActivity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="VÖEN" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/clNonResidentNaturalBorderUserSearchActivity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilFirstNameNonResidentNaturalBorderUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/etFirstNameNonResidentNaturalBorderUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/name" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilLastNameNonResidentNonResidentNaturalBorderUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tilFirstNameNonResidentNaturalBorderUserSearchActivity">
+
+                                <EditText
+                                    android:id="@+id/etLastNameNonResidentNonResidentNaturalBorderUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/surname" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilPatronymicNonResidentNaturalBorderUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tilLastNameNonResidentNonResidentNaturalBorderUserSearchActivity">
+
+                                <EditText
+                                    android:id="@+id/etPatronymicNonResidentNaturalBorderUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/father_name" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilIdDocumentNonResidentNaturalBorderUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tilPatronymicNonResidentNaturalBorderUserSearchActivity">
+
+                                <EditText
+                                    android:id="@+id/etIdDocumentNonResidentNaturalBorderUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Xarici pasportun nömrəsi" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/clNonResidentJuridicalBorderUserSearchActivity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilFullNameNonResidentJuridicalBorderUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <EditText
+                                    android:id="@+id/etFullNameNonResidentJuridicalBorderUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/full_name" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tilIdDocumentNonResidentJuridicalBorderUserSearchActivity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tilFullNameNonResidentJuridicalBorderUserSearchActivity">
+
+                                <EditText
+                                    android:id="@+id/etIdDocumentNonResidentJuridicalBorderUserSearchActivity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Unikal identifikator" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/btnUserSearchEnterUserSearchActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/btn_background"
+                    android:text="@string/search"
+                    android:textColor="#ffffff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

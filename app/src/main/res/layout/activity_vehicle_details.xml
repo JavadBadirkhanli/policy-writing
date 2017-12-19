@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context=".activities.VehicleDetailsActivity"
+    tools:showIn="@layout/content_vehicle_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnCarNumberVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/number_plate"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvCarNumberVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnCertificateNumberVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/certificate_number"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvCertificateNumberVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnBodyNumberVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Ban nömrəsi"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvBodyNumberVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnEngineNumberVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Mühərrikin nömrəsi"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvEngineNumberVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnChassisNumberVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Şassi nömrəsi"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvChassisNumberVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnMakeVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Marka"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvMakeVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnModelVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Model"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvModelVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnVehicleTypeVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="NV-nin tipi"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvVehicleTypeVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEngineCapacityVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Mühərrikin həcmi"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvEngineCapacityVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMaxPermissibleMassVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Maksimal icazə verilən kütlə"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvMaxPermissibleMassVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPassengerSeatCountVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Oturacaqların sayı"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvPassengerSeatCountVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnVehicleColorVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Rəng"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvVehicleColorVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnYearOfManufactureVehicleDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Buraxılış ili"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvYearOfManufactureVehicleDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineVehicleDetailsActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/btnConfirmVehicleDetailsActivity"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/confirm"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineVehicleDetailsActivity"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btnMisMatchVehicleDetailsActivity"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:text="Yanlışdır"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineVehicleDetailsActivity" />
+
+</android.support.constraint.ConstraintLayout>

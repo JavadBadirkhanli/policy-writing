@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.simberg.cib.policywriting.activities.MainActivity">
+    <item
+        android:id="@+id/actionContractsHistory"
+        android:orderInCategory="100"
+        android:title="@string/action_contracts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionGetAuthorisations"
+        android:orderInCategory="100"
+        android:title="@string/action_authorisations"
+        app:showAsAction="never" />
+</menu>

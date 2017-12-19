@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">PolicyWriting</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="action_contracts">Müqavilələr</string>
+    <string name="action_participants">İştirakçılar</string>
+    <string name="action_authorisations">Əməliyyatları yenilə</string>
+
+    <string name="insurance_fee">Sığorta haqqı</string>
+    <string name="insurance_fee_example">199 AZN</string>
+    <string name="surname">Soyad</string>
+    <string name="surname_example">Danyalov</string>
+    <string name="name">Ad</string>
+    <string name="name_example">Jeyhun</string>
+    <string name="father_name">Ata adı</string>
+    <string name="father_name_example">Fizuli</string>
+    <string name="fin">FİN</string>
+    <string name="fin_example">23T6JS2</string>
+    <string name="model_example">Hyundai Tucson Minik</string>
+    <string name="number_plate">Dövlət qeydiyyat nişanı</string>
+    <string name="number_plate_example">90-OT-647</string>
+    <string name="contract_confirmation">MÜQAVİLƏNİ HAZIRLA</string>
+
+    <string name="authentication">QEYDIYYAT</string>
+    <string name="phone_number">Telefon nömrəsi</string>
+    <string name="user_id">İstifadəçi İD-si</string>
+    <string name="enter">DAXİL OL</string>
+    <string name="sign_contract">İMZALA</string>
+
+    <string name="responsible_person">MƏSUL ŞƏXS</string>
+    <string name="insurance_company">İcbari müqavilə sistemi</string>
+    <string name="first_contract">AVSMMİS müqavilə</string>
+    <string name="second_contract">DƏİS müqavilə</string>
+    <string name="third_contract">DƏİMMİS müqavilə</string>
+    <string name="fourth_contract">DƏİMMİS müqavilə</string>
+    <string name="fifth_contract">PƏQİHİS müqavilə</string>
+
+    <string name="registration">QEYDİYYAT</string>
+
+    <string name="birth_place">Doğulduğu yer</string>
+    <string name="birth_place_example">Azərbaycan, Qusar ş.</string>
+    <string name="birth_date">Doğulduğu tarix</string>
+    <string name="birth_date_example">02.04.1987</string>
+    <string name="living_place">Yaşayış yeri</string>
+    <string name="living_place_example">Qusar ş., Murtuzayev, ev 91</string>
+    <string name="confirm">TƏSDİQLƏ</string>
+
+    <string name="national_id_serial_number">Şəxsiyyət vəsiqəsinin seriya və nömrəsi</string>
+    <string name="pin_code">Pin kod</string>
+    <string name="non_resident_id_document_number">Yaşama icazə sənədinin nömrəsi</string>
+    <string name="full_name">Tam adı</string>
+    <string name="search">AXTAR</string>
+    <string name="terminate">XİTAM VER</string>
+
+    <string name="ban_type">Tip</string>
+    <string name="manufactured_year">Buraxılış ili</string>
+    <string name="manufactured_year_example">2013</string>
+    <string name="engine_code">Mühərrik</string>
+    <string name="engine_code_example">G4KDDU120554</string>
+    <string name="body_code">Ban</string>
+    <string name="color">Rəng</string>
+    <string name="engine_volume">M.İ.H</string>
+
+    <string name="certificate_number">NV-nin qeydiyyat şəhadətnaməsi</string>
+
+    <string name="natural_person">Fiziki şəxs</string>
+    <string name="juridical_person">Hüquqi şəxs</string>
+
+    <string name="price">%1$s AZN</string>
+
+    <string name="file_provider_authority" translatable="false">org.simberg.cib.policywriting.fileprovider</string>
+
+    <string name="wait">Gözləyin...</string>
+
+    <string name="register">Qeydiyyatdan keç</string>
+
+    <string-array name="vehicle_type">
+        <item>Avtobus</item>
+        <item>Yük</item>
+        <item>Minik</item>
+        <item>Motosikl</item>
+        <item>Qoşqu</item>
+        <item>Xüsusi təyinatlı</item>
+        <item>Elektromobil</item>
+    </string-array>
+
+    <string name="body_number">Ban nömrəsi</string>
+    <string name="chassis_number">Şassi nömrəsi</string>
+    <string name="engine_number">Mühərrikin nömrəsi</string>
+    <string name="year_of_manufacture">Buraxılış ili</string>
+    <string name="vehicle_color">Rəngi</string>
+    <string name="make">Marka</string>
+    <string name="model">Model</string>
+    <string name="vehicle_type">Nəqliyyat vasitəsinin növü</string>
+    <string name="engine_capacity">Mühərrikin həcmi (sm³)</string>
+    <string name="max_permissible_mass">Maksimum yük götürmə qabiliyəti</string>
+    <string name="passenger_seat_count">Oturacaqların sayı</string>
+    <string name="horse_power">At gücü</string>
+    <string name="mia">DİN</string>
+    <string name="nonMia">Digər</string>
+
+    <string-array name="dialog_period">
+        <item>Müddəti seçin</item>
+        <item>1 ay</item>
+        <item>3 ay</item>
+        <item>6 ay</item>
+        <item>12 ay</item>
+    </string-array>
+
+    <string-array name="blank_series">
+        <item>Seçin</item>
+        <item>TA</item>
+        <item>RA</item>
+        <item>GA</item>
+    </string-array>
+</resources>

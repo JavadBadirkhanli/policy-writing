@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/tilNameNonResidentUserDetailsDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etNameNonResidentUserDetailsDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilSurnameNonResidentUserDetailsDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilNameNonResidentUserDetailsDialog">
+
+        <EditText
+            android:id="@+id/etSurnameNonResidentUserDetailsDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/surname" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilPatronymicNonResidentUserDetailsDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilSurnameNonResidentUserDetailsDialog">
+
+        <EditText
+            android:id="@+id/etPatronymicNonResidentUserDetailsDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/father_name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilPinNonResidentUserDetailsDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilPatronymicNonResidentUserDetailsDialog">
+
+        <EditText
+            android:id="@+id/etPinNonResidentUserDetailsDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="VMMS pin" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilIdDocumentNonResidentUserDetailsDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilPinNonResidentUserDetailsDialog">
+
+        <EditText
+            android:id="@+id/etIdDocumentNonResidentUserDetailsDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Yaşama sənədinin nömrəsi" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvDocumentTypeTitleNonResidentUserDetailsDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Yaşama sənədinin növü"
+        android:textSize="@dimen/customTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilIdDocumentNonResidentUserDetailsDialog" />
+
+    <RadioGroup
+        android:id="@+id/rgDocumentTypeNonResidentUserDetailsDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvDocumentTypeTitleNonResidentUserDetailsDialog">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rbPrcNonResidentUserDetailsDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daimi" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rbTrcNonResidentUserDetailsDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Müvəqqəti" />
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

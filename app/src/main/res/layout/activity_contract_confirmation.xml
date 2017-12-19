@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Hesablanmış Sığorta haqqı"
+                android:textColor="#808080"
+                android:textSize="@dimen/customTitle"/>
+
+            <TextView
+                android:id="@+id/tvCalculatedPriceContractConfirmationActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#668089"
+                android:textStyle="bold"
+                android:textSize="@dimen/customEntry" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#d5d5d5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Bonus-malus əmsalı"
+                android:textColor="#808080"
+                android:textSize="@dimen/customTitle"/>
+
+            <TextView
+                android:id="@+id/tvBmCoefficientContractConfirmationActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#668089"
+                android:textStyle="bold"
+                android:textSize="@dimen/customEntry"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#d5d5d5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Yekun sığorta haqqı"
+                android:textColor="#808080"
+                android:textSize="@dimen/customTitle"/>
+
+            <TextView
+                android:id="@+id/tvInsurancePriceContractConfirmationActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#668089"
+                android:textStyle="bold"
+                android:textSize="@dimen/customEntry"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#d5d5d5" />
+
+            <LinearLayout
+                android:id="@+id/lnCertificateNumberContractConfirmationActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/certificate_number"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvCertificateNumberContractConfirmationActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnCarNumberContractConfirmationActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/number_plate"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvCarNumberContractConfirmationActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry"  />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnVehicleNameContractConfirmationActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Nəqliyyat vasitəsi"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvVehicleNameContractConfirmationActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnInsuredPersonContractConfirmationActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Sığortalı"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/customTitle" />
+
+                <TextView
+                    android:id="@+id/tvInsuredPersonContractConfirmationActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#668089"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/customEntry"  />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d5d5d5" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnConfirmContractConfirmationActivity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/contract_confirmation"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
